@@ -4,7 +4,9 @@
 #ifndef LIBBST_BST_H
 #define LIBBST_BST_H
 
-#define
+#define BST_DISPLAY_PRE_ORDER 0
+#define BST_DISPLAY_IN_ORDER 1
+#define BST_DISPLAY_POST_ORDER 2
 
 /** @cond */
 
@@ -70,9 +72,12 @@ void bst_tree_release(BstTree *tree);
  * @brief Display tree nodes using pre-order algorithm.
  *
  * Values are displayed by calling the tree's display function.
+ * The order in which the values are displayed depend on the specified display mode.
+ * The available display modes can be identified as BST_DISPLAY_*.
  * @param tree Tree to display.
+ * @param display_mode Display mode constant.
  */
-void bst_tree_display_pre_order(BstTree *tree);
+void bst_tree_display(BstTree *tree, int display_mode);
 
 /**
  * @brief Display tree nodes using in-order algorithm

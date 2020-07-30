@@ -143,16 +143,18 @@ void bst_node_display_value(BstNode *node, bst_display_fn display_fn) {
 
 }
 
-void bst_tree_display_pre_order(BstTree *tree) {
-    bst_subtree_display_pre_order(tree->root, tree->display_fn);
-}
-
-void bst_tree_display_in_order(BstTree *tree) {
-    bst_subtree_display_pre_order(tree->root, tree->display_fn);
-}
-
-void bst_tree_display_post_order(BstTree *tree) {
-    bst_subtree_display_post_order(tree->root, tree->display_fn);
+void bst_tree_display(BstTree *tree, int display_mode) {
+    switch (display_mode) {
+        case BST_DISPLAY_PRE_ORDER:
+            bst_subtree_display_pre_order(tree->root, tree->display_fn);
+            break;
+        case BST_DISPLAY_IN_ORDER:
+            bst_subtree_display_in_order(tree->root, tree->display_fn);
+            break;
+        case BST_DISPLAY_POST_ORDER:
+            bst_subtree_display_post_order(tree->root, tree->display_fn);
+            break;
+    }
 }
 
 void bst_subtree_display_pre_order(BstNode *root, bst_display_fn display_fn) {
