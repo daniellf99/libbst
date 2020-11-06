@@ -1,9 +1,3 @@
-/*
- * Daniel Luís Ferreira - 830367
- * Estruturas De Dados II
- * Usado como referência de código C: https://github.com/mayank99/kruskal
- */
-
 #include <stdlib.h>
 #include "bst.h"
 
