@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include "bst.h"
 
-void bst_node_release_value(BstNode *node, bst_release_fn release_fn);
-void bst_node_display_value(BstNode *node, bst_display_fn display_fn);
 
 BstTree *bst_tree_create(bst_display_fn display_fn, bst_release_fn release_fn, bst_cmp_fn cmp_fn) {
 
