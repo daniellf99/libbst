@@ -6,7 +6,7 @@ Libbst is a C library for creating and manipulating binary search trees.
 
 The library is built using [CMake](https://cmake.org/).
 
-To install it on Ubuntu:
+To install `cmake` on Ubuntu:
 * `sudo apt install cmake`
 
 To build it, simply run `cmake CMakeLists.txt`.
@@ -17,8 +17,7 @@ The documentation needs to be generated with [Doxygen](https://www.doxygen.nl/in
 In order to create graphs you will also need `graphviz`.
 
 On Ubuntu:
-* `sudo apt install doxygen`
-* `sudo apt install graphviz`
+* `sudo apt install doxygen graphviz`
 
 On Windows:
 see [this link](https://www.doxygen.nl/manual/install.html#install_bin_windows).
