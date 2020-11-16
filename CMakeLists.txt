@@ -3,4 +3,4 @@ project(libbst C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(libbst src/bst.c src/bst.h)
+add_library(bst src/bst.c src/bst.h)
